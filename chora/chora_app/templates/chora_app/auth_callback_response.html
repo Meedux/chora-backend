@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUI Example</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@mui/material@latest/umd/material-ui.development.js"></script>
+    <title>Access Token Response</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const { Button } = MaterialUI;
+
+        function App() {
+            return React.createElement(Button, { variant: 'contained', color: 'primary' }, 'HERE');
+        }
+
+        ReactDOM.render(React.createElement(App), document.getElementById('root'));
+    </script>  
+   <h1>Access Token</h1>
+    {% if response.error %}
+        <p>Error: {{ response }}</p>
+    
+        <p>Error: {{ code }}</p>
+    {% else %}
+        <p>Access Token: {{ response}}</p>
+    {% endif %}
+</body>
+</html>

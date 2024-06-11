@@ -1,0 +1,61 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My page</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <script
+      src="https://unpkg.com/react@latest/umd/react.development.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
+    <script
+      src="https://unpkg.com/@mui/material@latest/umd/material-ui.development.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/@babel/standalone@latest/babel.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fonts to support Material Design -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+    />
+    <!-- Icons to support Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  </head>
+  <body>
+    {% if user.is_authenticated %}
+      <div id="root"></div>
+      <script>
+        const username = "{{ user.username }}"
+      </script>
+      <script 
+        type="text/babel" 
+        src="{% static 'chora_app/js/index_auth.js' %}">
+      </script>
+    {% else %}
+      <div id="root"></div>
+      <script type="text/babel" src="{% static 'chora_app/js/index_no_auth.js' %}"></script>
+    {% endif %}
+  </body>
+</html>
+
+<!-- <body>
+  {% if user.is_authenticated %}
+    Hi {{ user.username }}!
+  {% else %}
+    <div id="root"></div>
+    <script type="text/babel" src="{% static 'chora_app/js/index.js' %}"></script>
+  {% endif %}
+
+
+
+        <script type="text/babel" src="{% static 'chora_app/js/index_auth.js' %}">
+        const username =  user.username;
+        const href = 
+      </script>
+</body> -->

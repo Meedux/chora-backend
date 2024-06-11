@@ -1,0 +1,26 @@
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<id>urn:uuid:54e4d76c-f593-494a-bdb6-5edf0a016969</id>
+<title>SCE Usage Feed</title>
+<updated>2024-03-15T14:58:31-07:00</updated>
+<link href="https://energydatashare.sce.com/DataCustodian/espi/1_1/resource/ApplicationInformation" rel="self"/>
+<entry>
+<id>urn:uuid:54e4d76c-f593-494a-bdb6-5edf0a016969</id>
+<link href="https://energydatashare.sce.com/DataCustodian/espi/1_1/resource/ApplicationInformation" rel="up"/>
+<link href="https://energydatashare.sce.com/DataCustodian/espi/1_1/resource/ApplicationInformation/1" rel="self"/>
+<title>Energy Data Share Application</title>
+<content>
+<ApplicationInformation xmlns="http://naesb.org/espi">
+<authorizationServerAuthorizationEndpoint>https://wwwsysb.sce.com/sps/ESPIFed/oauth20/authorize</authorizationServerAuthorizationEndpoint>
+<authorizationServerTokenEndpoint>https://wwwsysb.sce.com/sps/ESPIFed/oauth20/token</authorizationServerTokenEndpoint>
+<authorizationServerUri>https://energydatasharest.sce.com/DataCustodian/espi/1_1/resource/Authorization</authorizationServerUri>
+<client_id>0oa1zmg05q3inuQjS0h8</client_id>
+<client_secret>Sa65bc5NzPxo5WX6ZJu29bVXl8HySO9DgDFSORhbedMl7bPjQBBsK2F5liSlSNgF</client_secret>
+<dataCustodianApplicationStatus>2</dataCustodianApplicationStatus>
+<dataCustodianBulkRequestURI>https://energydatasharest.sce.com/DataCustodian/espi/1_1/resource/Bulk</dataCustodianBulkRequestURI>
+<dataCustodianId>SouthernCaliforniaEdison</dataCustodianId>
+<scope>FB=1_3_4_5_8_13_18_19_31_34_35_39;IntervalDuration=900_3600;BlockDuration=Daily;HistoryLength=34128000;SubscriptionFrequency=Daily;</scope>
+<thirdPartyApplicationDescription>Chora Sustainability Partners</thirdPartyApplicationDescription>
+<thirdPartyApplicationStatus>3</thirdPartyApplicationStatus>
+<thirdPartyApplicationUse>1</thirdPartyApplicationUse>
+<thirdPartyNotifyUri>https://app.chora.network/notif</thirdPartyNotifyUri></ApplicationInformation></content></entry></feed>
